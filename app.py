@@ -46,6 +46,7 @@ def main():
         )
 
     with st.container(border=True):
+        st.subheader("Create a Work")
         col1,col2=st.columns([50,50])
         with col1:
             work_name = st.text_input("Name of Work")

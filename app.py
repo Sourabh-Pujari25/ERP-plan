@@ -47,23 +47,27 @@ def main():
 
     with st.container(border=True):
         st.subheader("Create a Work")
-        col1,col2,submit_work_col=st.columns([40,40,20])
+        col1,col2=st.columns([50,50])
         with col1:
             work_name = st.text_input("Name of Work")
+            with st.container(border=True):
+                st.subheader("Material Info")
+                vardhaman_material = st.text_input("Vardhaman Material")
+                mmc_material = st.text_input("MMC Material")
         with col2:
             date = st.date_input("Date")
-        with submit_work_col:
-            st.markdown(' <div style="height: 27px; visibility: hidden;"></div>',unsafe_allow_html=True)
-            st.button("Save",use_container_width=True,type="primary")
+            with st.container(border=True):
+                st.subheader("Excavation Details")
+                excavation_quantity = st.number_input("Excavation Quantity")
+                excavation_length = st.number_input("Excavation Length", value=1)
+                excavation_width = st.number_input("Excavation Width", value=1)
+                excavation_depth = st.number_input("Excavation Depth", value=1)
+                excavation_default = st.checkbox("Default Excavation")
+                excavation_material = st.selectbox("Excavation Material", ["Material 1", "Material 2"])
+        
         # Example of different input fields, you can add more
-        vardhaman_material = st.text_input("Vardhaman Material")
-        mmc_material = st.text_input("MMC Material")
-        excavation_quantity = st.number_input("Excavation Quantity")
-        excavation_length = st.number_input("Excavation Length", value=1)
-        excavation_width = st.number_input("Excavation Width", value=1)
-        excavation_depth = st.number_input("Excavation Depth", value=1)
-        excavation_default = st.checkbox("Default Excavation")
-        excavation_material = st.selectbox("Excavation Material", ["Material 1", "Material 2"])
+        
+        
         start_time_jcb_bucket = st.number_input("Start Time for JCB Bucket")
         stop_time_jcb_bucket = st.number_input("Stop Time for JCB Bucket")
         start_time_jcb_breaker = st.number_input("Start Time for JCB Breaker")

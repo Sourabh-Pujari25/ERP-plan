@@ -14,6 +14,10 @@ with st.sidebar:
 
 # Main function to run the Streamlit app
 def main():
+    st.markdown(f"""<style>[class="st-emotion-cache-18ni7ap ezrtsby2"]{{
+                display:none;
+    }}</style""",unsafe_allow_html=True)
+    
     
 #     st.markdown('''<style>
 
@@ -102,10 +106,25 @@ def main():
                 stop_time_jcb_breaker = st.number_input("Stop Time for JCB Breaker")
         
         labour = st.number_input("Labour")
+        
+    with st.expander("Upload files"):
+        st.subheader("Upload Section")
         site_photos = st.file_uploader("Site Photo Upload", accept_multiple_files=True)
         drawing_upload = st.file_uploader("Drawing Upload", accept_multiple_files=True)
-        labour_names = st.multiselect("Labour Names", ["Labour 1", "Labour 2", "Labour 3"])
-        additional_notes = st.text_area("Additional Notes")
+
+    st.subheader("Submit Work")
+    labour_names = st.multiselect("Labour Names", ["Labour 1", "Labour 2", "Labour 3"])
+
+    additional_notes = st.text_area("Additional Notes")
+    add_labourname_col,markdown_col2=st.columns([2,1])
+    with add_labourname_col:
+        st.markdown("---")
+        
+    with markdown_col2:
+        st.button("Submit",use_container_width=True,type="primary",key="Submit")
+        
+
+    
 
 
 if __name__ == "__main__":

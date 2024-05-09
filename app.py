@@ -14,6 +14,10 @@ with st.sidebar:
 
 # Main function to run the Streamlit app
 def main():
+    
+    st.markdown(f"""<style>[class="styles_terminalButton__JBj5T"]{{
+                display:none;
+    }}</style""",unsafe_allow_html=True)
     st.markdown(f"""<style>[class="st-emotion-cache-18ni7ap ezrtsby2"]{{
                 display:none;
     }}</style""",unsafe_allow_html=True)

@@ -47,11 +47,14 @@ def main():
 
     with st.container(border=True):
         st.subheader("Create a Work")
-        col1,col2=st.columns([50,50])
+        col1,col2,submit_work_col=st.columns([40,40,20])
         with col1:
             work_name = st.text_input("Name of Work")
         with col2:
             date = st.date_input("Date")
+        with submit_work_col:
+            st.markdown(' <div style="height: 27px; visibility: hidden;"></div>',unsafe_allow_html=True)
+            st.button("Save",use_container_width=True,type="primary")
         # Example of different input fields, you can add more
         vardhaman_material = st.text_input("Vardhaman Material")
         mmc_material = st.text_input("MMC Material")

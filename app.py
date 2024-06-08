@@ -32,18 +32,18 @@ def main():
 
         st.markdown("""<style>
         .responsive-image {
-            display: block; /* Show by default */
+            height: 120px; /* Show by default */
         }
         
         @media (max-width: 768px) {
             .responsive-image {
-                display: none; /* Hide on small screens */
+                height: 0px; /* Hide on small screens */
             }
         }
     </style>
 </head>
 <body>
-                    <div style="height: 120px;"class="responsive-image"></div>
+                    <div class="responsive-image"></div>
     
 </body>""",unsafe_allow_html=True)
 

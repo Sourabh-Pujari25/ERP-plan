@@ -48,7 +48,7 @@ def main():
                 @media only screen and (max-width: 768px) {
                     .desktop-only {
                         display: block;
-                        height:20px;
+                        height:50px;
                     }
                 }
 

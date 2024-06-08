@@ -7,16 +7,35 @@ st.set_page_config(page_title='Oliots ERP', page_icon='images/logo.ico')
 #078a97
 
 def main():
-    st.markdown(f'''
+    
+    st.markdown('''<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Visibility</title>
     <style>
-    section[data-testid="stSidebar"] .css-ng1t4o {{width: 50%; padding-bottom:50px;}}
-    </style>
-''',unsafe_allow_html=True)
-    st.markdown(f'''
-    <style>[stroke="currentColor"] {{display: none;}}
-    </style>
-''',unsafe_allow_html=True)
+        /* Default style: hide the image */
+        .mobile-only {
+            display: none;
+        }
 
+        /* Media query for screens with max-width 768px (typical for mobile devices) */
+        @media only screen and (max-width: 768px) {
+            .mobile-only {
+                display: block; /* Show the image */
+            }
+        }
+    </style>
+</head>
+<body>
+    <img class="mobile-only" src="your-image-url.jpg" alt="Mobile-only image">
+</body>
+</html>
+
+    
+''',unsafe_allow_html=True)
+    
 
     # Sidebar 
     st.sidebar.markdown(f"""<style>[class="st-emotion-cache-1gv3huu eczjsme16"]{{position: relative;

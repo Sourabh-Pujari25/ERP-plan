@@ -47,8 +47,8 @@ def main():
                 /* Hide the div on screens smaller than 768px */
                 @media only screen and (max-width: 768px) {
                     .desktop-only {
-                        display: block;
-                        height:50px;
+                        display: none;
+                        
                     }
                 }
 

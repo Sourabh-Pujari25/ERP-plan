@@ -22,9 +22,20 @@ background-attachment: fixed;
 
 #st.set_page_config(page_title='Oliots ERP', page_icon='images/logo.ico',layout="wide")
 def main():
-    st.markdown(f"""<style>[class="st-emotion-cache-12fmjuu ezrtsby2"]{{display:none;}}</style>""",unsafe_allow_html=True)
+    # Sidebar hide
     
-    markdowns()
+    st.markdown(f"""<style>[class="st-emotion-cache-1gv3huu eczjsme16"]{{display:none;}}</style>""",unsafe_allow_html=True)
+    #topbar
+    st.markdown(f"""<style>[class="st-emotion-cache-12fmjuu ezrtsby2"]{{display:none;}}</style>""",unsafe_allow_html=True)
+    #pages  
+    # st.markdown(f"""<style>[class="st-emotion-cache-10rjk4g eczjsme14"]{{display:none; }}</style>""",unsafe_allow_html=True)
+    # st.markdown(f"""<style>[class="st-emotion-cache-1mi2ry5 eczjsme6"]{{display:none; }}</style>""",unsafe_allow_html=True)
+    #image expander 
+    st.markdown(f"""<style>[class="eyeqlp51 st-emotion-cache-1u2dcfn ex0cdmw0"]{{display:none; }}</style>""",unsafe_allow_html=True)
+    # LINK ICON
+    st.markdown(f"""<style>[class="st-emotion-cache-gi0tri e1nzilvr1"]{{display:none; margin-bottom:30px;}}</style>""",unsafe_allow_html=True)
+    
+    
     image_path = f"{IMAGES}{LOGO_IMAGE}"
     col1,space,col2=st.columns([30,10,60])
     with col1:

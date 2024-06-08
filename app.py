@@ -38,14 +38,9 @@ def main():
     
 
     # Sidebar 
-    st.sidebar.markdown(f"""<style>[class="st-emotion-cache-1gv3huu eczjsme16"]{{position: relative;
-    user-select: auto;
-    width: 100%;
-    height: 777px;
-    box-sizing: border-box;
-    flex-shrink: 0;
+    st.sidebar.markdown(f"""<style>[class="st-emotion-cache-1gv3huu eczjsme16"]{{
    background: linear-gradient(to bottom right, #053c47, #078a97);}}</style>""",unsafe_allow_html=True)
-    #collapse
+    #collapse button
     st.sidebar.markdown(f"""<style>[class="eyeqlp51 st-emotion-cache-1pbsqtx ex0cdmw0"]{{display: none;}}</style>""",unsafe_allow_html=True)
     image_path = f"{IMAGES}{LOGO_IMAGE}"
     st.sidebar.markdown("""<div style="

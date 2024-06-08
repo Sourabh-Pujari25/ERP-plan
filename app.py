@@ -9,7 +9,11 @@ st.set_page_config(page_title='Oliots ERP', page_icon='images/logo.ico')
 def main():
     st.markdown(f'''
     <style>
-    section[data-testid="stSidebar"] .css-ng1t4o {{width: 50%;}}
+    section[data-testid="stSidebar"] .css-ng1t4o {{width: 50%; padding-bottom:50px;}}
+    </style>
+''',unsafe_allow_html=True)
+    st.markdown(f'''
+    <style>[stroke="currentColor"] {{display: none;}}
     </style>
 ''',unsafe_allow_html=True)
 
@@ -17,7 +21,7 @@ def main():
     # Sidebar 
     st.sidebar.markdown(f"""<style>[class="st-emotion-cache-1gv3huu eczjsme16"]{{position: relative;
     user-select: auto;
-    width: 50%;
+    width: 100%;
     height: 777px;
     box-sizing: border-box;
     flex-shrink: 0;

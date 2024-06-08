@@ -49,7 +49,7 @@ def main():
         
         @media (max-width: 768px) {
             .responsive-image {
-                visibility: hidden; /* Hide on small screens */
+                height:0%; /* Hide on small screens */
             }
         }
     </style>

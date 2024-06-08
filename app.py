@@ -9,37 +9,8 @@ st.set_page_config(page_title='Oliots ERP', page_icon='images/logo.ico')
 def main():
     image_path = f"{IMAGES}{LOGO_IMAGE}"
     
-    st.markdown(f'''<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Visibility</title>
-    <style>
-        /* Default style: hide the image */
-        .mobile-only {{
-            display: none;
-        }}
-
-        /* Media query for screens with max-width 768px (typical for mobile devices) */
-        @media only screen and (max-width: 768px) {{
-            .mobile-only {{
-                display: block; /* Show the image */
-            }}
-        }}
-    </style>
-</head>
-<body>
-<a href="https://github.com/Sourabh-Pujari25/ERP-plan/blob/main/images">
-
-    <img class="mobile-only" src="/logo.png" alt="Mobile-only image">
-             </a>   
-</body>
-</html>
-
-    
-''',unsafe_allow_html=True)
-    
+    st.markdown(f"""<style>[class="st-emotion-cache-gi0tri e1nzilvr1"]{{display:none; margin-bottom:30px;}}</style>""",unsafe_allow_html=True)
+    st.markdown(f"""<style>[class="st-emotion-cache-ocqkz7 e1f1d6gn5"]{{margin-bottom:25px;}}</style>""",unsafe_allow_html=True)
 
     # Sidebar 
     st.sidebar.markdown(f"""<style>[class="st-emotion-cache-1gv3huu eczjsme16"]{{

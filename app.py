@@ -17,7 +17,7 @@ def main():
     # Sidebar 
     st.sidebar.markdown(f"""<style>[class="st-emotion-cache-1gv3huu eczjsme16"]{{position: relative;
     user-select: auto;
-    width: 100%;
+    width: 50%;
     height: 777px;
     box-sizing: border-box;
     flex-shrink: 0;

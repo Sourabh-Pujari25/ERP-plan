@@ -30,8 +30,10 @@ def main():
     #pages  
     # st.markdown(f"""<style>[class="st-emotion-cache-10rjk4g eczjsme14"]{{display:none; }}</style>""",unsafe_allow_html=True)
     # st.markdown(f"""<style>[class="st-emotion-cache-1mi2ry5 eczjsme6"]{{display:none; }}</style>""",unsafe_allow_html=True)
+    st.markdown(f"""<style>[class="eyeqlp51 st-emotion-cache-1f3w014 ex0cdmw0"]{{display:none; }}</style>""",unsafe_allow_html=True)
     #image expander 
     st.markdown(f"""<style>[data-testid="StyledFullScreenButton"]{{display:none; }}</style>""",unsafe_allow_html=True)
+    #c
     
     # LINK ICON
     st.markdown(f"""<style>[class="st-emotion-cache-gi0tri e1nzilvr1"]{{display:none; margin-bottom:30px;}}</style>""",unsafe_allow_html=True)
@@ -40,24 +42,49 @@ def main():
     image_path = f"{IMAGES}{LOGO_IMAGE}"
     col1,space,col2=st.columns([30,10,60])
     with col1:
+        css = """
+                <style>
+                /* Hide the div on screens smaller than 768px */
+                @media only screen and (max-width: 768px) {
+                    .desktop-only {
+                        display: none;
+                    }
+                }
+
+                /* Show the div on screens larger than or equal to 768px */
+                @media only screen and (min-width: 768px) {
+                    .desktop-only {
+                        display: block;
+                        height:120px
+                    }
+                }
+                </style>
+                """
+        html = """
+            <div class="desktop-only">
+                
+            </div>
+            """
+        st.markdown(css + html, unsafe_allow_html=True)
 
 
-        st.markdown("""<style>
-        .responsive-image {
-            height: 120px; /* Show by default */
-        }
+
+#         st.markdown("""<style>
+#         .responsive-image {
+#             height: 120px; /* Show by default */
+#         }
         
-        @media (max-width: 768px) {
-            .responsive-image {
-                height:0%; /* Hide on small screens */
-            }
-        }
-    </style>
-</head>
-<body>
-                    <div class="responsive-image"></div>
+#         @media (max-width: 768px) {
+#             .responsive-image {
+#                 margin-top: -140px; /* Hide on small screens */
+#             }
+#         }
+#     </style>
+# </head>
+# <body>
+#                     <div class="responsive-image"></div>
     
-</body>""",unsafe_allow_html=True)
+# </body>""",unsafe_allow_html=True)
 
 
 

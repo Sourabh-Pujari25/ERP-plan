@@ -38,7 +38,7 @@ def main():
     
         space1,logo_space,space2=st.columns([20,60,20])
         with logo_space:
-            st.markdown("""<h1 style="color: teal;">Sign in to Workspace</h1>""",unsafe_allow_html=True)
+            st.markdown("""<center><h1 style="color: teal;">Sign in to Workspace</h1></center>""",unsafe_allow_html=True)
         with st.container(border=True):
             pad_left,content,pad_right=st.columns([10,80,10])
             with content:

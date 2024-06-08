@@ -19,12 +19,10 @@ def main():
     #collapse button
     st.sidebar.markdown(f"""<style>[class="eyeqlp51 st-emotion-cache-1pbsqtx ex0cdmw0"]{{display: none;}}</style>""",unsafe_allow_html=True)
     image_path = f"{IMAGES}{LOGO_IMAGE}"
-    st.sidebar.markdown("""<div style="
-    height: 170px;
-"></div>""",unsafe_allow_html=True)
+    st.sidebar.markdown("""<div style="height: 170px;"></div>""",unsafe_allow_html=True)
     st.sidebar.image(image_path) 
     #containers
-    st.sidebar.markdown(f"""<style>[class="st-emotion-cache-r421ms e1f1d6gn0"]{{padding: 50px;}}</style>""",unsafe_allow_html=True)
+    #st.sidebar.markdown(f"""<style>[class="st-emotion-cache-r421ms e1f1d6gn0"]{{padding: 50px;}}</style>""",unsafe_allow_html=True)
 
     
     
@@ -34,10 +32,15 @@ def main():
         st.markdown("""<h1 style="
     color: teal;
 ">Sign in to Workspace</h1>""",unsafe_allow_html=True)
-    with st.container(border=True):  
-        username_inp=st.text_input("Username")
-        password_inp=st.text_input("Password")
-        login_butt=st.button("Login",use_container_width=True,type="primary")
+    with st.container(border=True):
+        pad_left,content,pad_right=st.columns([10,80,10])
+        with content:
+            st.markdown("""<div style="height: 20px;"></div>""",unsafe_allow_html=True)
+            username_inp=st.text_input("Username")
+            password_inp=st.text_input("Password")
+            login_butt=st.button("Login",use_container_width=True,type="primary")
+            st.markdown("""<div style="height: 20px;"></div>""",unsafe_allow_html=True)
+        
     
 
 

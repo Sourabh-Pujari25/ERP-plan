@@ -11,6 +11,7 @@ def main():
     
     st.markdown(f"""<style>[class="st-emotion-cache-gi0tri e1nzilvr1"]{{display:none; margin-bottom:30px;}}</style>""",unsafe_allow_html=True)
     st.markdown(f"""<style>[class="st-emotion-cache-ocqkz7 e1f1d6gn5"]{{margin-bottom:25px;}}</style>""",unsafe_allow_html=True)
+    
 
     # Sidebar 
     st.sidebar.markdown(f"""<style>[class="st-emotion-cache-1gv3huu eczjsme16"]{{

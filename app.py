@@ -31,9 +31,10 @@ def main():
     # st.markdown(f"""<style>[class="st-emotion-cache-10rjk4g eczjsme14"]{{display:none; }}</style>""",unsafe_allow_html=True)
     # st.markdown(f"""<style>[class="st-emotion-cache-1mi2ry5 eczjsme6"]{{display:none; }}</style>""",unsafe_allow_html=True)
     #image expander 
-    st.markdown(f"""<style>[class="eyeqlp51 st-emotion-cache-1u2dcfn ex0cdmw0"]{{display:none; }}</style>""",unsafe_allow_html=True)
+    #st.markdown(f"""<style>[data-testid="StyledFullScreenButton"]{{display:none; }}</style>""",unsafe_allow_html=True)
+    
     # LINK ICON
-    st.markdown(f"""<style>[class="st-emotion-cache-gi0tri e1nzilvr1"]{{display:none; margin-bottom:30px;}}</style>""",unsafe_allow_html=True)
+    #st.markdown(f"""<style>[class="st-emotion-cache-gi0tri e1nzilvr1"]{{display:none; margin-bottom:30px;}}</style>""",unsafe_allow_html=True)
     
     
     image_path = f"{IMAGES}{LOGO_IMAGE}"
@@ -48,7 +49,7 @@ def main():
         
         @media (max-width: 768px) {
             .responsive-image {
-                height: 0px; /* Hide on small screens */
+                height: 120px; /* Hide on small screens */
             }
         }
     </style>

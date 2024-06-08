@@ -30,7 +30,7 @@ def main():
     </style>
 </head>
 <body>
-    <img class="mobile-only" src="{image_path}" alt="Mobile-only image">
+    <img class="mobile-only" src="https://github.com/Sourabh-Pujari25/ERP-plan/blob/main/images/logo.png" alt="Mobile-only image">
                 
 </body>
 </html>

@@ -28,7 +28,32 @@ def main():
     image_path = f"{IMAGES}{LOGO_IMAGE}"
     col1,space,col2=st.columns([30,10,60])
     with col1:
-        st.markdown("""<div style="height: 120px;"></div>""",unsafe_allow_html=True)
+
+
+        st.markdown("""<style>
+        .responsive-image {
+            display: block; /* Show by default */
+        }
+        
+        @media (max-width: 768px) {
+            .responsive-image {
+                display: none; /* Hide on small screens */
+            }
+        }
+    </style>
+</head>
+<body>
+                    <div style="height: 120px;"class="responsive-image"></div>
+    
+</body>""",unsafe_allow_html=True)
+
+
+
+
+
+
+
+        #st.markdown("""<div style="height: 120px;"></div>""",unsafe_allow_html=True)
         st.image(image_path,use_column_width=True) 
     with col2:
 

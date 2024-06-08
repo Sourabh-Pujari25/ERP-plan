@@ -3,7 +3,7 @@ from app_utils import *
 #from dotenv import load_dotenv
 from streamlit_option_menu import option_menu
 
-st.set_page_config(page_title='Oliots ERP', page_icon='images/logo.ico')
+st.set_page_config(page_title='Oliots ERP', page_icon='images/logo.ico',layout="wide")
 #078a97
 
 def main():

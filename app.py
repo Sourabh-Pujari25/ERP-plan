@@ -3,12 +3,6 @@ from app_utils import *
 #from dotenv import load_dotenv
 from streamlit_option_menu import option_menu
 import base64
-from screeninfo import get_monitors
-
-
-
-
-
 st.set_page_config(page_title='Oliots ERP', page_icon='images/logo.ico',layout="wide")
 
 def get_img_as_base64(file):
@@ -27,24 +21,18 @@ background-attachment: fixed;
 
 
 def main():
-
-    for monitor in get_monitors():
-        resolution_monitor = monitor.width
-        #print(f"Monitor: {monitor.name}")
-        #print(f"Width: {monitor.width}, Height: {monitor.height}")
-    if resolution_monitor >= 1000:
-        # Sidebar hide
-        st.markdown(f"""<style>[class="st-emotion-cache-1gv3huu eczjsme16"]{{display:none;}}</style>""",unsafe_allow_html=True)
-        #topbar
-        st.markdown(f"""<style>[class="st-emotion-cache-12fmjuu ezrtsby2"]{{display:none;}}</style>""",unsafe_allow_html=True)
-        #pages  
-        st.markdown(f"""<style>[class="eyeqlp51 st-emotion-cache-1f3w014 ex0cdmw0"]{{display:none; }}</style>""",unsafe_allow_html=True)
-        #image expander 
-        st.markdown(f"""<style>[data-testid="StyledFullScreenButton"]{{display:none; }}</style>""",unsafe_allow_html=True)
-        #c
-        
-        # LINK ICON
-        st.markdown(f"""<style>[class="st-emotion-cache-gi0tri e1nzilvr1"]{{display:none; margin-bottom:30px;}}</style>""",unsafe_allow_html=True)
+    # Sidebar hide
+    st.markdown(f"""<style>[class="st-emotion-cache-1gv3huu eczjsme16"]{{display:none;}}</style>""",unsafe_allow_html=True)
+    #topbar
+    st.markdown(f"""<style>[class="st-emotion-cache-12fmjuu ezrtsby2"]{{display:none;}}</style>""",unsafe_allow_html=True)
+    #pages  
+    st.markdown(f"""<style>[class="eyeqlp51 st-emotion-cache-1f3w014 ex0cdmw0"]{{display:none; }}</style>""",unsafe_allow_html=True)
+    #image expander 
+    st.markdown(f"""<style>[data-testid="StyledFullScreenButton"]{{display:none; }}</style>""",unsafe_allow_html=True)
+    #c
+    
+    # LINK ICON
+    st.markdown(f"""<style>[class="st-emotion-cache-gi0tri e1nzilvr1"]{{display:none; margin-bottom:30px;}}</style>""",unsafe_allow_html=True)
     
     
     image_path = f"{IMAGES}{LOGO_IMAGE}"

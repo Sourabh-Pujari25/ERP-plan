@@ -21,19 +21,18 @@ background-attachment: fixed;
 
 
 def main():
-    # Sidebar hide
+    # # Sidebar hide
+    # st.markdown(f"""<style>[class="st-emotion-cache-1gv3huu eczjsme16"]{{display:none;}}</style>""",unsafe_allow_html=True)
+    # #topbar
+    # st.markdown(f"""<style>[class="st-emotion-cache-12fmjuu ezrtsby2"]{{display:none;}}</style>""",unsafe_allow_html=True)
+    # #pages  
+    # st.markdown(f"""<style>[class="eyeqlp51 st-emotion-cache-1f3w014 ex0cdmw0"]{{display:none; }}</style>""",unsafe_allow_html=True)
+    # #image expander 
+    # st.markdown(f"""<style>[data-testid="StyledFullScreenButton"]{{display:none; }}</style>""",unsafe_allow_html=True)
+    # #c
     
-    st.markdown(f"""<style>[class="st-emotion-cache-1gv3huu eczjsme16"]{{display:none;}}</style>""",unsafe_allow_html=True)
-    #topbar
-    st.markdown(f"""<style>[class="st-emotion-cache-12fmjuu ezrtsby2"]{{display:none;}}</style>""",unsafe_allow_html=True)
-    #pages  
-    st.markdown(f"""<style>[class="eyeqlp51 st-emotion-cache-1f3w014 ex0cdmw0"]{{display:none; }}</style>""",unsafe_allow_html=True)
-    #image expander 
-    st.markdown(f"""<style>[data-testid="StyledFullScreenButton"]{{display:none; }}</style>""",unsafe_allow_html=True)
-    #c
-    
-    # LINK ICON
-    st.markdown(f"""<style>[class="st-emotion-cache-gi0tri e1nzilvr1"]{{display:none; margin-bottom:30px;}}</style>""",unsafe_allow_html=True)
+    # # LINK ICON
+    # st.markdown(f"""<style>[class="st-emotion-cache-gi0tri e1nzilvr1"]{{display:none; margin-bottom:30px;}}</style>""",unsafe_allow_html=True)
     
     
     image_path = f"{IMAGES}{LOGO_IMAGE}"
